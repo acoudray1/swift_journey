@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,39 +15,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofc-Dj-fHR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofc-Dj-fHR">
                                 <rect key="frame" x="12" y="44" width="390" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="mWB-j7-p8q"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <state key="normal" title="🚀"/>
                                 <connections>
                                     <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ySN-QL-M0Y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSj-1T-z8J">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSj-1T-z8J">
                                 <rect key="frame" x="12" y="147" width="390" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="2yL-Ro-Ikx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <state key="normal" title="🦹‍♀️"/>
                                 <connections>
                                     <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNQ-Ad-eIo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xq-Mn-Yfw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xq-Mn-Yfw">
                                 <rect key="frame" x="12" y="250" width="390" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="bAL-zU-9uu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <state key="normal" title="👨‍🚀"/>
                                 <connections>
                                     <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ls-q7-TEM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8w-FZ-e4m">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8w-FZ-e4m">
                                 <rect key="frame" x="12" y="353" width="390" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <state key="normal" title="🧟"/>
@@ -57,6 +62,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ofc-Dj-fHR" firstAttribute="leading" secondItem="2Xq-Mn-Yfw" secondAttribute="leading" id="1XE-GL-hKL"/>
+                            <constraint firstItem="ofc-Dj-fHR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="2rc-8h-13P"/>
+                            <constraint firstItem="ofc-Dj-fHR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ecu-mQ-pIP"/>
+                            <constraint firstItem="ofc-Dj-fHR" firstAttribute="leading" secondItem="uSj-1T-z8J" secondAttribute="leading" id="Hhd-zK-dP6"/>
+                            <constraint firstItem="ofc-Dj-fHR" firstAttribute="trailing" secondItem="uSj-1T-z8J" secondAttribute="trailing" id="I6h-KC-7vW"/>
+                            <constraint firstItem="ofc-Dj-fHR" firstAttribute="trailing" secondItem="2Xq-Mn-Yfw" secondAttribute="trailing" id="QFC-ob-Iwz"/>
+                            <constraint firstItem="ofc-Dj-fHR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VZi-uf-ZdY"/>
+                            <constraint firstItem="uSj-1T-z8J" firstAttribute="top" secondItem="ofc-Dj-fHR" secondAttribute="bottom" constant="8" id="aIB-MJ-ECs"/>
+                            <constraint firstItem="ofc-Dj-fHR" firstAttribute="leading" secondItem="r8w-FZ-e4m" secondAttribute="leading" id="bRi-8X-Yis"/>
+                            <constraint firstItem="r8w-FZ-e4m" firstAttribute="top" secondItem="2Xq-Mn-Yfw" secondAttribute="bottom" constant="8" id="fny-zc-0uL"/>
+                            <constraint firstItem="2Xq-Mn-Yfw" firstAttribute="top" secondItem="uSj-1T-z8J" secondAttribute="bottom" constant="8" id="mLO-fV-vw6"/>
+                            <constraint firstItem="ofc-Dj-fHR" firstAttribute="trailing" secondItem="r8w-FZ-e4m" secondAttribute="trailing" id="pGJ-LS-Z0l"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
